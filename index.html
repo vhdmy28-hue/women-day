@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Vietnamese Women's Day – 20/10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff0f6; --bg2:#ffe0ee; --pink:#ff6fa5; --pink-d:#e0457f; --pink-l:#ffc2da; --pink-xl:#ffe6f0;
+  --ink:#6b2744; --muted:#a2607f; --white:#fffafc;
+  --round:"Baloo 2","Nunito",ui-rounded,"Arial Rounded MT Bold","Varela Round",system-ui,sans-serif;
+  --body:"Nunito",ui-rounded,"Arial Rounded MT Bold",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;color:var(--ink);font-family:var(--body);overflow-x:hidden;padding-bottom:90px;
+  background:radial-gradient(circle at 12% 8%,#ffd3e5 0,transparent 38%),radial-gradient(circle at 90% 30%,#ffc9df 0,transparent 35%),linear-gradient(180deg,var(--bg),var(--bg2));
+  background-attachment:fixed;
+}
+h1,h2,.round{font-family:var(--round)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px;position:relative;z-index:2}
+
+.fall{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.fall i{position:absolute;top:-8vh;font-style:normal;opacity:.55;animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(var(--dx),112vh,0) rotate(360deg)}}
+
+.hero{text-align:center;padding:70px 0 50px}
+.kicker{display:inline-block;margin:0 0 18px;padding:8px 20px;background:var(--white);border:2px dashed var(--pink-l);border-radius:999px;color:var(--pink-d);font-weight:800;letter-spacing:.04em}
+h1{margin:0 0 14px;font-size:clamp(42px,8.5vw,88px);line-height:1.02;font-weight:800;color:var(--pink-d);text-shadow:3px 4px 0 var(--pink-l)}
+.sub{max-width:560px;margin:0 auto 30px;font-size:18px;line-height:1.7;color:var(--muted)}
+.big-btn{border:0;border-radius:999px;padding:15px 34px;font:800 18px var(--round);color:#fff;background:linear-gradient(135deg,#ff8fbc,var(--pink-d));box-shadow:0 8px 0 #c2336a,0 14px 26px rgba(224,69,127,.3);cursor:pointer;transition:transform .15s,box-shadow .15s}
+.big-btn:hover{transform:translateY(3px);box-shadow:0 5px 0 #c2336a,0 8px 18px rgba(224,69,127,.3)}
+.big-btn:active{transform:translateY(8px);box-shadow:0 0 0 #c2336a}
+.bouquet{font-size:64px;margin-top:26px;animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px) rotate(3deg)}}
+
+.section{padding:30px 0 60px}
+h2{margin:0 0 18px;text-align:center;font-size:clamp(32px,6vw,52px);color:var(--pink-d);font-weight:800}
+.intro{max-width:620px;margin:-6px auto 34px;text-align:center;font-size:17px;line-height:1.75;color:var(--muted)}
+
+/* floating names */
+.names-stage{position:relative;height:580px;overflow:hidden;border-radius:40px;border:3px solid var(--pink-l);background:radial-gradient(circle at 50% 50%,#fff 0,#ffe3ef 55%,#ffcfe3 100%);box-shadow:0 10px 0 var(--pink-l),0 20px 34px rgba(224,69,127,.15)}
+.nm{position:absolute;bottom:-70px;padding:8px 18px;border-radius:999px;background:var(--white);border:2px solid var(--pink-l);font-family:var(--round);font-weight:700;color:var(--pink-d);box-shadow:0 6px 14px rgba(224,69,127,.15);white-space:nowrap;animation:rise var(--d) var(--dl) linear infinite}
+.nm:nth-child(3n){background:#ffd9e8}.nm:nth-child(3n+1){background:#fff}.nm:nth-child(3n+2){background:#ffeaf3}
+@keyframes rise{0%{transform:translate(0,0) rotate(var(--r));opacity:0}8%{opacity:1}90%{opacity:1}100%{transform:translate(var(--dx),-700px) rotate(calc(var(--r)*-1));opacity:0}}
+.teacher{position:absolute;left:50%;top:50%;z-index:5;transform:translate(-50%,-50%);text-align:center;animation:tbob 4s ease-in-out infinite;width:max-content;max-width:92%}
+.teacher small{display:block;margin-bottom:6px;font:700 15px var(--round);color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.teacher b{display:inline-block;padding:14px 38px;border-radius:999px;font:800 clamp(30px,7vw,68px)/1.1 var(--round);color:#fff;background:linear-gradient(135deg,#ff8fbc,var(--pink-d));border:5px solid #fff;box-shadow:0 10px 0 #c2336a,0 22px 40px rgba(224,69,127,.4)}
+.teacher::before{content:"👑";position:absolute;top:-36px;left:50%;font-size:40px;transform:translateX(-50%) rotate(-8deg)}
+@keyframes tbob{50%{transform:translate(-50%,-56%) rotate(1.5deg)}}
+.name-edit{display:none;max-width:560px;margin:22px auto 0;padding:16px 18px;border-radius:24px;background:var(--white);border:2px dashed var(--pink)}
+body.editing .name-edit{display:block}
+.name-edit label{display:block;margin:0 0 6px;font:700 14px var(--round);color:var(--pink-d)}
+.name-edit input,.name-edit textarea{width:100%;padding:10px 14px;border:2px solid var(--pink-l);border-radius:16px;font:600 15px var(--body);color:var(--ink);background:#fff;margin-bottom:12px}
+.name-edit textarea{min-height:130px;resize:vertical}
+.name-edit input:focus,.name-edit textarea:focus{outline:0;border-color:var(--pink)}
+
+/* wishes */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+.wish{position:relative;padding:22px 22px 18px;border-radius:28px;background:var(--white);border:3px solid var(--pink-l);box-shadow:0 8px 0 var(--pink-l),0 16px 28px rgba(224,69,127,.12);transition:transform .25s;opacity:0}
+.wish:nth-child(4n+1){transform:rotate(-1.4deg)}
+.wish:nth-child(4n+2){transform:rotate(1.2deg);background:#fff3f8}
+.wish:nth-child(4n+3){transform:rotate(-.8deg);background:#ffeaf3}
+.wish:nth-child(4n){transform:rotate(1.6deg)}
+.wish:hover{transform:rotate(0) translateY(-6px) scale(1.02)}
+.wish::before{content:"💗";position:absolute;top:-16px;left:18px;font-size:28px}
+.wish .text{margin:8px 0 14px;font-size:16px;line-height:1.7;min-height:70px;white-space:pre-wrap}
+.wish .from{margin:0;text-align:right;font:700 17px var(--round);color:var(--pink-d)}
+.wish .del{display:none;position:absolute;top:10px;right:12px;width:28px;height:28px;border:0;border-radius:50%;background:var(--pink-xl);color:var(--pink-d);font-size:17px;cursor:pointer}
+.add-wrap{display:none;text-align:center;margin-top:30px}
+.closing{text-align:center;padding:30px 0 40px}
+.closing .msg{max-width:640px;margin:0 auto 14px;font:700 clamp(20px,3.4vw,28px)/1.5 var(--round);color:var(--pink-d);white-space:pre-wrap}
+.closing .sign{font-size:17px;color:var(--muted)}
+body.opened .wish{animation:pop .6s both cubic-bezier(.2,.9,.3,1.3)}
+@keyframes pop{from{opacity:0;translate:0 30px;scale:.85}to{opacity:1;translate:0 0;scale:1}}
+body.editing .wish{opacity:1}
+
+/* editing */
+body.editing [data-k]{outline:2px dashed var(--pink);outline-offset:4px;border-radius:8px;cursor:text;background:rgba(255,255,255,.6)}
+body.editing .del{display:block}
+body.editing .add-wrap{display:block}
+
+/* toolbar */
+.bar{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:20;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding:10px 12px;background:rgba(255,250,252,.92);backdrop-filter:blur(8px);border:2px solid var(--pink-l);border-radius:999px;box-shadow:0 10px 30px rgba(224,69,127,.25);max-width:calc(100vw - 20px)}
+.bar button{border:0;border-radius:999px;padding:9px 15px;font:700 14px var(--round);color:var(--pink-d);background:var(--pink-xl);cursor:pointer;white-space:nowrap}
+.bar button:hover,.bar button.on{background:var(--pink);color:#fff}
+.hint{position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:20;display:none;padding:8px 18px;border-radius:999px;background:var(--pink-d);color:#fff;font:700 14px var(--round);box-shadow:0 6px 16px rgba(0,0,0,.15);text-align:center;max-width:calc(100vw - 20px)}
+body.editing .hint{display:block}
+.toast{position:fixed;left:50%;bottom:92px;transform:translateX(-50%);z-index:40;max-width:calc(100vw - 30px);padding:10px 20px;border-radius:999px;background:var(--pink-d);color:#fff;font:700 14px var(--round);box-shadow:0 8px 20px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:opacity .25s;text-align:center}
+.toast.show{opacity:1}
+.burst{position:fixed;pointer-events:none;z-index:30;font-size:22px;animation:burst 1.4s ease-out forwards}
+@keyframes burst{to{transform:translate(var(--x),var(--y)) scale(.4);opacity:0}}
+@media(max-width:560px){.hero{padding-top:50px}.bar button{padding:8px 11px;font-size:13px}.names-stage{height:520px}}
+</style>
+</head>
+<body>
+<div class="fall" id="fall"></div>
+<div class="hint">✏️ Editing mode — click any text to change it</div>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="kicker" data-k="kicker"></p>
+    <h1 data-k="title"></h1>
+    <p class="sub" data-k="sub"></p>
+    <button class="big-btn" id="openBtn">💌 Open the card</button>
+    <div class="bouquet">🌸🌷🌸</div>
+  </header>
+
+  <section class="section" id="names">
+    <h2 data-k="namesTitle"></h2>
+    <div class="names-stage" id="nameStage"></div>
+    <div class="name-edit">
+      <label for="teacherInput">Teacher's name (shown biggest, in the middle)</label>
+      <input id="teacherInput" type="text">
+      <label for="musicUrl">Or paste a link to an .mp3</label>
+      <input id="musicUrl" type="url" placeholder="https://.../song.mp3">
+      <label for="namesInput">Classmates' names (one per line)</label>
+      <textarea id="namesInput"></textarea>
+    </div>
+  </section>
+
+  <section class="section" id="wishes">
+    <h2 data-k="wishTitle"></h2>
+    <p class="intro" data-k="intro"></p>
+    <div class="grid" id="grid"></div>
+    <div class="add-wrap"><button class="big-btn" id="addBtn">＋ Add a wish</button></div>
+  </section>
+
+  <section class="closing">
+    <p class="msg" data-k="closing"></p>
+    <p class="sign" data-k="sign"></p>
+  </section>
+</div>
+
+<nav class="bar">
+  <button id="editBtn">✏️ Edit</button>
+  <button id="musicBtn">🎵 Play music</button>
+  <button id="uploadBtn">📁 Choose music</button>
+  <button id="defaultMusicBtn">↩ Default music</button>
+  <button id="saveBtn">💾 Save file</button>
+  <button id="resetBtn">↺ Reset</button>
+</nav>
+<div class="toast" id="toast"></div>
+<input type="file" id="fileInput" accept="audio/*,.mp3" hidden>
+
+<script id="cardState" type="application/json">
+{
+  "savedAt": 1792407237468,
+  "kicker": "October 20 · Vietnamese Women's Day",
+  "title": "Happy 20/10!",
+  "sub": "To all the brilliant and lovely girls of ML594 class🌸 ",
+  "namesTitle": "TO ALL OF YOU 🎈",
+  "teacherLabel": "OUR BELOVED
